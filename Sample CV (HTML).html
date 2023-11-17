@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Layout</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <table border="1" style="width: 100%;border-collapse: collapse">
+    <tr>
+        <td colspan="10" style="text-align: center; background-color: rgb(236, 218, 206);">
+            <h1>CURRICULUM VITAE</h1>
+            <img src="https://img.freepik.com/free-vector/hand-drawn-empowered-muslim-woman-illustration_23-2149704215.jpg?w=740&t=st=1700218438~exp=1700219038~hmac=6ab1f5e3878f4870ba9c636ab930eb1d70626d500107d39e0dc660c0110bd1c9" style="width: 50%; padding-bottom: 20px;"><br>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 20%; background-color: rgb(194, 156, 130); ">
+            <ul>
+                <h3>Social Media</h3>
+                <li><a href="https://github.com/salma270">Github</a></li>
+                <li><a href="#">Whatsapp</a></li>
+                <li><a href="#">Linkedln</a></li>
+            </ul>
+        </td>
+        <td style="padding-left: 20px; background-color: rgb(124, 97, 78); color: rgb(253, 253, 253);">
+            <h2>Tentang Saya</h2>
+            <p>Saya seorang mahasiswa semester 3 di sebuah fakultas yang ada di Tegal yaitu politeknik Harapan Bersama. Saat ini saya sedang mempelajari bahasa pemrograman html. Saya juga menyukai hal-hal yang berhubungan dengan desain dan seni.</p>
+            <h2>Data diri</h2>
+            <p>Nama : Putri Salma Lutfi Awaliyah</p>
+            <p>Status : Mahasiswa</p>
+            <p>Agama : Islam</p>
+            <p>Sekolah : Politeknik Harapan Bersama Tegal</p>
+            <p>Jurusan : D4 Teknik Informatika</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="10" style="text-align: center; background-color: rgb(224, 190, 165);">
+        <h2>Pengalaman</h2>
+        <p> Saya pernah bekerja sebagai operator di PT Tri Lestari Sandang Industri selama 1 tahun</p>
+        <p> Saya pernah menjalankan art comission selama beberapa bulan</p>
+        <p> Saya pernah bekerja sebagai editor lepas selama beberapa bulan</p>
+        <h2> Work Sample</h2>
+        <p> sample website no 1 <a href="https://putrisalma-ti-poltekharber.blogspot.com/">Cek disini</a></li></p>
+    </td>
+    </tr>
+    </table>
+    <div class="container">
+        <div class="clock">
+            <span id="hrs">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+        </div>
+    </div>
+    
+    <script>
+        let hrs = document.getElementsByid("hrs");
+        let min = document.getElementsByid("min");
+        let sec = document.getElementsByid("sec");
+    
+        setInterval(()=>{
+            let currentTime = new Date();
+        hrs.innerHTML = currentTime.getHours();
+        min.innerHTML = currentTime.getMinutes();
+        sec.innerHTML = currentTime.getSeconds();
+        },1000)
+    </script>
+</body>
+
+</html>
